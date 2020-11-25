@@ -1,5 +1,4 @@
 <?php
-
     $id = $_POST['id'];
     $noktp = $_POST['noktp'];
     $email = $_POST['email'];
