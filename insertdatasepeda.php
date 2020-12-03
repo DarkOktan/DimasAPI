@@ -13,7 +13,9 @@
 
         $sql = "INSERT into tbsepeda (kode, merk, jenis, warna, hargasewa) values ('$kode', '$merk', '$jenis', '$warna', '$hargasewa')";
 
-        if ($con->query($sql) === TRUE) $json["Result"]["STATUS"] = "SUCCESS";
+        if ($con->query($sql) === TRUE){
+            $json["Result"]["STATUS"] = "SUCCESS";
+        } 
     }
     
     echo json_encode($json);
